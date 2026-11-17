@@ -1,21 +1,9 @@
-# The Lost Moonlight — first playable story
+# Scripted journey
 
-Target interaction: one short guided adventure. The child helps, explores, and plays alongside Sparky. Voice is optional.
-
-| Scene | Sparky | Child | Branch |
-|---|---|---|---|
-| Intro | Greets and explains the missing light | Starts adventure | Continue to forest |
-| Forest | Explains three glow seeds | Taps each seed | Contextual count responses; collect first light |
-| Travel | Floats along the route | Watches or drags scenery | Arrive at river |
-| River | Explains numbered crossing | Taps/drags 1, 2, 3 | Wrong order: hint; correct order: second light |
-| Travel | Continues towards the moon gate | Watches or explores | Arrive at clearing |
-| Moon gate | Asks who lights the night | Says or taps moon | Sun: daytime hint; unclear: retry; moon: third light |
-| Outro | Celebrates the adventure | Completes or replays | Local completion saved |
-
-All exact lines live in `src/lines.json` and have matching recorded MP3s. Twenty-three seconds without action triggers one gentle contextual hint. Repeated instructions are available. A voice-recognition error never removes progress.
-
-## New opening and map loop
-
-Meet Sparky → first name (spoken or typed) → confirm/correct → feelings → chosen reaction → favourite colour → chosen reaction → play together or explore → island map.
-
-Map → choose a place → Sparky travels → location-specific activity → friendly feedback and reward → return to map. Home reopens the companion conversation. The child chooses the visit order. Three distinct story locations restore the moonlight; the play garden is a separate colour activity. A returning visitor is greeted without repeating first-time setup.
+1. PNG play unlocks sound. Sparky greets, asks and confirms a name, asks feelings and favourite colour, then offers exploration.
+2. Drag the island or tap paths. Sparky travels; landmarks offer game pictures. Toys respond with movement and short remarks.
+3. Tap Sparky for gestures, jokes and playful responses. Optional voice intents request destinations, waves, hops and dances.
+4. The backpack voices PNG mission tasks: a toy, a place and a game. Actual events earn stars.
+5. A PW board opens. Completion and active play return through a same-origin validated bridge.
+6. Sparky praises effort or completion, celebrates rewards and offers two different learning districts.
+7. Repeated active play grows flowers, stars and a favourite cozy corner. Named local progress restores on this browser.

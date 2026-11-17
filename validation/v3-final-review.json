@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "voiceClips": 110,
+  "favouriteFixture": {
+    "favourite": "letters",
+    "seconds": 90,
+    "decor": "assets/mission-home.png"
+  },
+  "missionFixture": {
+    "index": 1,
+    "stars": 1
+  },
+  "note": "Preference growth and mission visual state used an isolated QA profile with simulated events; not recorded as child gameplay",
+  "errors": [],
+  "verifiedAt": "2026-11-17T17:13:16.637Z"
+}

@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "checks": [
+    "Six PNG landmark destinations",
+    "Character inhabits the same depth-sorted world",
+    "All landmark PNGs decoded",
+    "Travelling to a place offers its real game choices",
+    "Original PW game loads: letters",
+    "Correct game mode selected: letters",
+    "Leaving letters unloads the game",
+    "Original PW game loads: letter-picture",
+    "Correct variant selected: letter-picture",
+    "Leaving letter-picture unloads the game",
+    "Original PW game loads: letter-case",
+    "Correct variant selected: letter-case",
+    "Leaving letter-case unloads the game",
+    "Original PW game loads: word-picture",
+    "Correct variant selected: word-picture",
+    "Leaving word-picture unloads the game",
+    "Original PW game loads: counting",
+    "Correct game mode selected: counting",
+    "Leaving counting unloads the game",
+    "Original PW game loads: count-connect",
+    "Correct variant selected: count-connect",
+    "Leaving count-connect unloads the game",
+    "Original PW game loads: equal-groups",
+    "Correct variant selected: equal-groups",
+    "Leaving equal-groups unloads the game",
+    "Original PW game loads: colour-match",
+    "Correct variant selected: colour-match",
+    "Leaving colour-match unloads the game",
+    "Original PW game loads: assembly",
+    "Correct game mode selected: assembly",
+    "Leaving assembly unloads the game",
+    "Original PW game loads: differences",
+    "Correct game mode selected: differences",
+    "Leaving differences unloads the game",
+    "Original PW game loads: food-sort",
+    "Correct variant selected: food-sort",
+    "Leaving food-sort unloads the game",
+    "Original PW game loads: accessory-grid",
+    "Correct variant selected: accessory-grid",
+    "Leaving accessory-grid unloads the game",
+    "Spoken destination selects and travels to counting mill",
+    "Phone world pans without page overflow",
+    "Picture choices fit a phone"
+  ],
+  "games": [
+    {
+      "id": "letters",
+      "topic": "letters",
+      "ready": true,
+      "boardChildren": 6,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "letter-picture",
+      "topic": "variants",
+      "variant": "letter-picture",
+      "ready": true,
+      "boardChildren": 5,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "letter-case",
+      "topic": "variants",
+      "variant": "letter-case",
+      "ready": true,
+      "boardChildren": 5,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "word-picture",
+      "topic": "variants",
+      "variant": "word-picture",
+      "ready": true,
+      "boardChildren": 5,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "counting",
+      "topic": "count-groups",
+      "ready": true,
+      "boardChildren": 3,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "count-connect",
+      "topic": "variants",
+      "variant": "count-connect",
+      "ready": true,
+      "boardChildren": 5,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "equal-groups",
+      "topic": "variants",
+      "variant": "equal-groups",
+      "ready": true,
+      "boardChildren": 5,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "colour-match",
+      "topic": "variants",
+      "variant": "colour-match",
+      "ready": true,
+      "boardChildren": 5,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "assembly",
+      "topic": "assembly",
+      "ready": true,
+      "boardChildren": 5,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "differences",
+      "topic": "differences",
+      "ready": true,
+      "boardChildren": 3,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "food-sort",
+      "topic": "variants",
+      "variant": "food-sort",
+      "ready": true,
+      "boardChildren": 5,
+      "homeOpen": false,
+      "loadingHidden": true
+    },
+    {
+      "id": "accessory-grid",
+      "topic": "variants",
+      "variant": "accessory-grid",
+      "ready": true,
+      "boardChildren": 5,
+      "homeOpen": false,
+      "loadingHidden": true
+    }
+  ],
+  "phone": {
+    "viewport": [
+      390,
+      844
+    ],
+    "world": [
+      1647,
+      1030
+    ],
+    "overflow": false
+  },
+  "phoneChoices": {
+    "left": 40.20000076293945,
+    "right": 350.20000076293945,
+    "top": 551.9249877929688,
+    "bottom": 784.9249877929688
+  },
+  "consoleErrors": [],
+  "recognition": "Destination callback tested with a mock; live child speech not measured",
+  "verifiedAt": "2026-11-17T16:42:01.680Z"
+}

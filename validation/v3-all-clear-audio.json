@@ -1,0 +1,449 @@
+{
+  "status": "passed",
+  "voice": "en-US-JennyNeural",
+  "rate": "-10%",
+  "pitch": "+6Hz",
+  "clips": 110,
+  "tracks": [
+    {
+      "id": "intro",
+      "duration": 12.528
+    },
+    {
+      "id": "seeds",
+      "duration": 10.248
+    },
+    {
+      "id": "seed1",
+      "duration": 2.664
+    },
+    {
+      "id": "seed2",
+      "duration": 4.752
+    },
+    {
+      "id": "seedsDone",
+      "duration": 9.36
+    },
+    {
+      "id": "bridge",
+      "duration": 14.016
+    },
+    {
+      "id": "bridgeWrong",
+      "duration": 5.112
+    },
+    {
+      "id": "bridge1",
+      "duration": 4.056
+    },
+    {
+      "id": "bridge2",
+      "duration": 3.744
+    },
+    {
+      "id": "bridgeDone",
+      "duration": 9.216
+    },
+    {
+      "id": "moon",
+      "duration": 11.28
+    },
+    {
+      "id": "moonWrong",
+      "duration": 7.32
+    },
+    {
+      "id": "moonDone",
+      "duration": 6.768
+    },
+    {
+      "id": "outro",
+      "duration": 13.992
+    },
+    {
+      "id": "unclear",
+      "duration": 6.264
+    },
+    {
+      "id": "listen",
+      "duration": 1.968
+    },
+    {
+      "id": "hintSeeds",
+      "duration": 5.904
+    },
+    {
+      "id": "hintBridge",
+      "duration": 6.336
+    },
+    {
+      "id": "hintMoon",
+      "duration": 5.88
+    },
+    {
+      "id": "helloName",
+      "duration": 7.872
+    },
+    {
+      "id": "nameCheck",
+      "duration": 2.496
+    },
+    {
+      "id": "nameWelcome",
+      "duration": 7.296
+    },
+    {
+      "id": "nameRetry",
+      "duration": 5.952
+    },
+    {
+      "id": "nameSkip",
+      "duration": 7.08
+    },
+    {
+      "id": "moodHappy",
+      "duration": 7.608
+    },
+    {
+      "id": "moodExcited",
+      "duration": 5.808
+    },
+    {
+      "id": "moodSleepy",
+      "duration": 9.96
+    },
+    {
+      "id": "moodShy",
+      "duration": 9.024
+    },
+    {
+      "id": "favoriteColor",
+      "duration": 8.736
+    },
+    {
+      "id": "colorRed",
+      "duration": 6.6
+    },
+    {
+      "id": "colorBlue",
+      "duration": 6.456
+    },
+    {
+      "id": "colorGreen",
+      "duration": 6.168
+    },
+    {
+      "id": "colorYellow",
+      "duration": 6.36
+    },
+    {
+      "id": "colorOrange",
+      "duration": 5.952
+    },
+    {
+      "id": "colorPurple",
+      "duration": 6.696
+    },
+    {
+      "id": "inviteStory",
+      "duration": 9.96
+    },
+    {
+      "id": "playTogether",
+      "duration": 7.848
+    },
+    {
+      "id": "waveDone",
+      "duration": 6.96
+    },
+    {
+      "id": "welcomeBack",
+      "duration": 9.888
+    },
+    {
+      "id": "conversationUnclear",
+      "duration": 8.136
+    },
+    {
+      "id": "conversationSilence",
+      "duration": 7.272
+    },
+    {
+      "id": "howFeeling",
+      "duration": 3.216
+    },
+    {
+      "id": "mapWelcome",
+      "duration": 11.184
+    },
+    {
+      "id": "mapReturn",
+      "duration": 4.704
+    },
+    {
+      "id": "gardenDone",
+      "duration": 6.912
+    },
+    {
+      "id": "gardenWrong",
+      "duration": 5.136
+    },
+    {
+      "id": "allLights",
+      "duration": 6
+    },
+    {
+      "id": "gardenRed",
+      "duration": 7.56
+    },
+    {
+      "id": "gardenBlue",
+      "duration": 7.512
+    },
+    {
+      "id": "gardenGreen",
+      "duration": 7.608
+    },
+    {
+      "id": "gardenYellow",
+      "duration": 7.608
+    },
+    {
+      "id": "gardenOrange",
+      "duration": 7.752
+    },
+    {
+      "id": "gardenPurple",
+      "duration": 7.68
+    },
+    {
+      "id": "worldWelcome",
+      "duration": 9.168
+    },
+    {
+      "id": "worldBack",
+      "duration": 5.28
+    },
+    {
+      "id": "worldWin",
+      "duration": 4.872
+    },
+    {
+      "id": "hubHome",
+      "duration": 5.592
+    },
+    {
+      "id": "offerLetters",
+      "duration": 8.28
+    },
+    {
+      "id": "offerNumbers",
+      "duration": 6.288
+    },
+    {
+      "id": "offerColours",
+      "duration": 6.864
+    },
+    {
+      "id": "offerPuzzles",
+      "duration": 6.024
+    },
+    {
+      "id": "offerPicnic",
+      "duration": 6.648
+    },
+    {
+      "id": "goLetters",
+      "duration": 5.04
+    },
+    {
+      "id": "goNumbers",
+      "duration": 4.824
+    },
+    {
+      "id": "goColours",
+      "duration": 3.216
+    },
+    {
+      "id": "goPuzzles",
+      "duration": 5.064
+    },
+    {
+      "id": "goPicnic",
+      "duration": 4.632
+    },
+    {
+      "id": "goHome",
+      "duration": 2.928
+    },
+    {
+      "id": "worldRoam",
+      "duration": 4.488
+    },
+    {
+      "id": "worldOffer",
+      "duration": 5.928
+    },
+    {
+      "id": "worldWait",
+      "duration": 4.488
+    },
+    {
+      "id": "worldLaunch",
+      "duration": 3.408
+    },
+    {
+      "id": "worldLoading",
+      "duration": 4.824
+    },
+    {
+      "id": "worldLoadError",
+      "duration": 6.192
+    },
+    {
+      "id": "worldMicHelp",
+      "duration": 8.52
+    },
+    {
+      "id": "worldNoHear",
+      "duration": 7.8
+    },
+    {
+      "id": "funHello",
+      "duration": 5.4
+    },
+    {
+      "id": "funTickle",
+      "duration": 4.632
+    },
+    {
+      "id": "funWave",
+      "duration": 5.184
+    },
+    {
+      "id": "funHop",
+      "duration": 5.784
+    },
+    {
+      "id": "funDance",
+      "duration": 6.096
+    },
+    {
+      "id": "funJoke1",
+      "duration": 7.128
+    },
+    {
+      "id": "funJoke2",
+      "duration": 5.64
+    },
+    {
+      "id": "funJoke3",
+      "duration": 5.064
+    },
+    {
+      "id": "funFriend",
+      "duration": 8.016
+    },
+    {
+      "id": "funFeeling",
+      "duration": 5.856
+    },
+    {
+      "id": "funGentle",
+      "duration": 7.656
+    },
+    {
+      "id": "funBye",
+      "duration": 6.168
+    },
+    {
+      "id": "funBall",
+      "duration": 6.528
+    },
+    {
+      "id": "funButterfly",
+      "duration": 7.704
+    },
+    {
+      "id": "funGift",
+      "duration": 8.232
+    },
+    {
+      "id": "funFlower",
+      "duration": 6.576
+    },
+    {
+      "id": "funBalloon",
+      "duration": 5.4
+    },
+    {
+      "id": "funExplore",
+      "duration": 8.28
+    },
+    {
+      "id": "funFollow",
+      "duration": 4.56
+    },
+    {
+      "id": "funHighFive",
+      "duration": 5.448
+    },
+    {
+      "id": "afterTry",
+      "duration": 5.4
+    },
+    {
+      "id": "afterLearn",
+      "duration": 6.24
+    },
+    {
+      "id": "placeGrowing",
+      "duration": 4.464
+    },
+    {
+      "id": "placeFavourite",
+      "duration": 6.456
+    },
+    {
+      "id": "offerFavourite",
+      "duration": 5.352
+    },
+    {
+      "id": "missionExplore",
+      "duration": 8.904
+    },
+    {
+      "id": "missionHelper",
+      "duration": 5.832
+    },
+    {
+      "id": "missionFriend",
+      "duration": 5.424
+    },
+    {
+      "id": "missionComplete",
+      "duration": 7.128
+    },
+    {
+      "id": "missionBall",
+      "duration": 6.024
+    },
+    {
+      "id": "missionGift",
+      "duration": 6.528
+    },
+    {
+      "id": "missionFlower",
+      "duration": 4.92
+    },
+    {
+      "id": "missionButterfly",
+      "duration": 3.336
+    },
+    {
+      "id": "missionGame",
+      "duration": 4.584
+    }
+  ]
+}

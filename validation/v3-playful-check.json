@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "checks": [
+    "World is larger and pannable",
+    "Six interactive world toys",
+    "Tapping Sparky triggers a voiced 3D gesture",
+    "Beach ball responds to play",
+    "Gift opens with a surprise",
+    "Flowers and butterfly react",
+    "Picture missions open without text panels",
+    "An actual PW round completion reaches world rewards",
+    "Completed game is remembered",
+    "After-game pictures suggest different learning",
+    "New warm voice tracks decode",
+    "Phone page has no horizontal overflow",
+    "Picture choices remain on screen",
+    "No browser console errors"
+  ],
+  "suggested": [
+    "counting",
+    "count-connect"
+  ],
+  "audio": [
+    {
+      "id": "helloName",
+      "duration": 7.872
+    },
+    {
+      "id": "worldWelcome",
+      "duration": 9.168
+    },
+    {
+      "id": "funTickle",
+      "duration": 4.632
+    },
+    {
+      "id": "funJoke1",
+      "duration": 7.128
+    },
+    {
+      "id": "afterLearn",
+      "duration": 6.24
+    },
+    {
+      "id": "missionComplete",
+      "duration": 7.128
+    }
+  ],
+  "phoneChoices": {
+    "left": 40.20000076293945,
+    "right": 350.20000076293945,
+    "bottom": 784.9249877929688
+  },
+  "errors": [],
+  "verifiedAt": "2026-11-17T17:09:10.132Z"
+}

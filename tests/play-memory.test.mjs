@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';import{PlayMemory}from'../src/play-memory.js';import{PW_GAMES,DESTINATIONS}from'../src/pw-catalog.js';
+function create(){const map=new Map(),storage={getItem:k=>map.get(k)??null,setItem:(k,v)=>map.set(k,v)};return new PlayMemory(PW_GAMES,DESTINATIONS,storage);}
+test('favourite place requires repeated visits and active play, not background waiting',()=>{const m=create();for(let n=0;n<3;n++){m.start('letters');for(let i=0;i<30;i++)m.tick(1,true);for(let i=0;i<100;i++)m.tick(1,false);m.stop();}assert.equal(m.game('letters').activeSeconds,90);assert.equal(m.updateFavourite(),'letters');});
+test('a single long visit does not claim a favourite',()=>{const m=create();m.start('counting');for(let i=0;i<300;i++)m.tick(1,true);assert.equal(m.updateFavourite(),null);});
+test('progress stays with the named child on the device',()=>{const m=create();m.setProfile('Ari');m.start('assembly');m.complete('assembly');m.stop();m.setProfile('Maya');assert.equal(m.data.games.assembly,undefined);m.setProfile('Ari');assert.equal(m.game('assembly').completions,1);});
+test('after-game recommendations offer a different learning district',()=>{const m=create();m.start('letters');m.complete('letters');const list=m.recommend('letters',2);assert.equal(list.length,2);assert.ok(list.every(g=>!DESTINATIONS.find(d=>d.id==='letters').games.includes(g.id)));});
+test('paused time and ended sessions do not increase active play',()=>{const m=create();m.start('assembly');m.tick(1,true);m.tick(1,false);m.stop();m.tick(1,true);assert.equal(m.game('assembly').activeSeconds,1);assert.throws(()=>m.start('unknown'));});
+
+test('two recommendations explore two different new districts',()=>{const m=create(),list=m.recommend('letters',2);const regions=list.map(g=>DESTINATIONS.find(d=>d.games.includes(g.id)).id);assert.equal(new Set(regions).size,2);});
