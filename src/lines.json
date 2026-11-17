@@ -1,0 +1,21 @@
+{
+  "intro": "Hello, explorer! I'm Sparky. The moon has lost its light, and the forest is falling asleep. Shall we bring the moonlight home?",
+  "seeds": "Look! Three sleepy glow seeds. Tap each one to wake it up. Their little lights will help the moon shine again.",
+  "seed1": "There's our first little light!",
+  "seed2": "Two lights! You're making the forest sparkle.",
+  "seedsDone": "We found all three! Even the smallest light can make a big difference. Let's follow the path to the Wishing River.",
+  "bridge": "Oh! The stepping stones have drifted away. Put them back in order. One, two, three. You can tap them, or drag them to the matching spaces.",
+  "bridgeWrong": "Let's start with the next number. We can do it together!",
+  "bridge1": "One! A lovely first step.",
+  "bridge2": "Two! Almost across.",
+  "bridgeDone": "Three! You built a way across. Come on, explorer. The moon is waiting for us.",
+  "moon": "We made it to the moon gate! Who lights up the night sky? Is it the sun, or the moon? Tap your answer, or tell me out loud.",
+  "moonWrong": "The sun shines in the daytime. Who comes out at night? Try the other one!",
+  "moonDone": "The moon! That's right. Let's send our little lights up to the sky.",
+  "outro": "Look! The moon is glowing again. You helped the forest, built a bridge, and brought back the light. Thank you for playing with me. Until our next adventure!",
+  "unclear": "I couldn't hear that clearly. You can try again, or tap your answer.",
+  "listen": "I'm listening.",
+  "hintSeeds": "Find the three glowing seeds. Tap one to give it a little sparkle.",
+  "hintBridge": "Look for the next number, then tap it. One, two, three.",
+  "hintMoon": "Think about the night sky. What do you see when the sun has gone to sleep?"
+}

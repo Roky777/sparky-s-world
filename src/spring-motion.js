@@ -1,0 +1,12 @@
+import * as THREE from 'three';
+// Optional gameplay response layered around the exported animation rig.
+export class SparkySpringMotion {
+ constructor(scene){this.rigidLimbs=!!scene.getObjectByName('Sparky_L_DetachedFlameLimb');this.object=new THREE.Group();this.object.name='Sparky_Interactive_Float';this.object.add(scene);this.position=[0,0,0];this.velocity=[0,0,0];this.target=[0,0,0];this.lag=[0,0,0];this.lagVelocity=[0,0,0];this.lastOffset=[0,0,0];this.halo=scene.getObjectByName('Sparky_Flame_Follow');this.crown=scene.getObjectByName('Sparky_Crown_Follow');this.frequencyHz=4.2;this.damping=.76;}
+ beforeAnimation(){for(let k=0;k<3;k++){if(this.halo)this.halo.position.setComponent(k,this.halo.position.getComponent(k)-this.lastOffset[k]);if(this.crown)this.crown.position.setComponent(k,this.crown.position.getComponent(k)-this.lastOffset[k]*.35)}this.lastOffset=[0,0,0];}
+ setTarget(x,y,z=0){this.target=[x,y,z].map(v=>Math.max(-.2,Math.min(.2,v)));}
+ release(){this.target=[0,0,0];}
+ impulse(x=0,y=.30,z=0){for(let k=0;k<3;k++)this.velocity[k]=Math.max(-.4,Math.min(.4,this.velocity[k]+[x,y,z][k]));}
+ integrate(p,v,target,dt,hz,zeta){const w=2*Math.PI*hz,wd=w*Math.sqrt(1-zeta*zeta),e=Math.exp(-zeta*w*dt),c=Math.cos(wd*dt),s=Math.sin(wd*dt),pp=e*(c+zeta*w*s/wd),pv=e*s/wd,vp=-e*w*w*s/wd,vv=e*(c-zeta*w*s/wd);for(let k=0;k<3;k++){const d=p[k]-target[k],next=pp*d+pv*v[k]+target[k];v[k]=vp*d+vv*v[k];p[k]=next;}}
+ update(dt){dt=Math.max(0,Math.min(dt,.05));this.integrate(this.position,this.velocity,this.target,dt,this.frequencyHz,this.damping);this.integrate(this.lag,this.lagVelocity,this.position,dt,3.4,.74);this.object.position.set(...this.position);const squash=this.rigidLimbs?1:Math.max(.985,Math.min(1.015,1-this.velocity[1]*.04));this.object.scale.set(1/Math.sqrt(squash),squash,1/Math.sqrt(squash));let offset=this.lag.map((v,k)=>v-this.position[k]);const length=Math.hypot(...offset);if(length>.018)offset=offset.map(v=>v*.018/length);for(let k=0;k<3;k++){if(this.halo)this.halo.position.setComponent(k,this.halo.position.getComponent(k)+offset[k]);if(this.crown)this.crown.position.setComponent(k,this.crown.position.getComponent(k)+offset[k]*.35)}this.lastOffset=offset;}
+ reset(){this.beforeAnimation();this.position=[0,0,0];this.velocity=[0,0,0];this.target=[0,0,0];this.lag=[0,0,0];this.lagVelocity=[0,0,0];this.object.position.set(0,0,0);this.object.scale.set(1,1,1);}
+}

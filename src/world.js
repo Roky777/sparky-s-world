@@ -1,0 +1,14 @@
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));const hash=n=>{const x=Math.sin(n*127.1+311.7)*43758.5453;return x-Math.floor(x)};
+export class DreamWorld{
+ constructor(canvas){this.canvas=canvas;this.c=canvas.getContext('2d',{alpha:false});this.camera=0;this.target=0;this.pan=0;this.time=0;this.moonLit=false;this.reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;this.images=[];this.resize();this.ready=Promise.all(['glowwood','river','moonrise'].map((name,i)=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>{this.images[i]=im;resolve()};im.onerror=()=>reject(Error('Background could not load: '+name));im.src='assets/'+name+'.png'})));}
+ resize(){this.w=innerWidth;this.h=innerHeight;this.dpr=Math.min(devicePixelRatio,1.5);this.canvas.width=Math.round(this.w*this.dpr);this.canvas.height=Math.round(this.h*this.dpr);this.scale=this.h/1000;this.vw=this.w/this.scale;}
+ glow(x,y,r,color){const c=this.c,g=c.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,color);g.addColorStop(1,'#00000000');c.fillStyle=g;c.fillRect(x-r,y-r,r*2,r*2)}
+ drawScene(i,opacity,offset){const im=this.images[i];if(!im||opacity<.001)return;const c=this.c,W=this.vw,H=1000;const zoom=Math.max(W/im.width,H/im.height)*1.13,w=im.width*zoom,h=im.height*zoom;const x=(W-w)*.5-offset,y=(H-h)*.46;c.save();c.globalAlpha=opacity;c.drawImage(im,x,y,w,h);c.restore();}
+ render(dt){this.time+=this.reduced?0:dt;this.camera+=(this.target+this.pan-this.camera)*Math.min(1,dt*3.5);const c=this.c,S=this.scale,W=this.vw,H=1000,t=this.time;c.setTransform(this.dpr*S,0,0,this.dpr*S,0,0);c.fillStyle='#40385b';c.fillRect(0,0,W,H);
+ const points=[Math.max(0,1080-W*.63),Math.max(0,2900-W*.63),Math.max(0,4970-W*.63)];let segment=this.camera<points[1]?0:1;const fraction=clamp((this.camera-points[segment])/(points[segment+1]-points[segment]),0,1);const fade=fraction*fraction*(3-2*fraction);this.drawScene(segment,1,fraction*W*.22+this.pan*.13);this.drawScene(segment+1,fade,-(1-fraction)*W*.22+this.pan*.13);
+ // Independent drifting particles and glows retain depth over the painted PNG scenery.
+ const veil=c.createLinearGradient(0,0,0,H);veil.addColorStop(0,'#171c3855');veil.addColorStop(.5,'#30254600');veil.addColorStop(1,'#15223233');c.fillStyle=veil;c.fillRect(0,0,W,H);
+ for(let i=0;i<44;i++){const x=((hash(i+5)*(W+200)-this.camera*(.09+(i%3)*.035)+Math.sin(t*.25+i)*16)%(W+200)+(W+200))%(W+200)-100,y=140+hash(i+19)*720+Math.sin(t*.7+i)*18,a=.2+.5*(.5+.5*Math.sin(t*.9+i*1.7));c.globalAlpha=a;if(i%3===0)this.glow(x,y,17,'#ffd18c44');c.fillStyle='#ffe4ab';c.beginPath();c.arc(x,y,i%4===0?2.4:1.25,0,Math.PI*2);c.fill()}c.globalAlpha=1;
+ if(this.moonLit){this.glow(W*.6,230,250,'#ffe9b454');for(let i=0;i<16;i++){const x=W*.3+hash(i+2)*W*.55,y=120+hash(i+80)*300;this.glow(x,y,12,'#ffe3a622')}}
+ }
+}

@@ -1,0 +1,11 @@
+import * as THREE from 'three';
+// Curves are authored into node extras and match the baked 24-second spark transforms.
+// Only per-spark materials are cloned; the character material is left alone.
+const smooth=(a,b,x)=>{const t=Math.max(0,Math.min(1,(x-a)/(b-a)));return t*t*(3-2*t)};
+export class SparkIgnition {
+ constructor(scene){this.records=[];this.time=0;this.warm=new THREE.Color('#ff7428');const assigned=new Set();scene.traverse(o=>{const data=o.userData?.sparkIgnition;if(!data?.energy?.length)return;const targets=[];o.traverse(m=>{if(m.isMesh&&!assigned.has(m)){assigned.add(m);targets.push(m)}});if(!targets.length)return;const originals=[];const materials=[];for(const object of targets){const original=object.material;const clones=(Array.isArray(original)?original:[original]).map(m=>{const clone=m.clone();clone.transparent=true;clone.depthWrite=false;clone.alphaTest=.002;materials.push({material:clone,color:m.color.clone(),emissive:m.emissive?.clone()||new THREE.Color(0)});return clone});originals.push({object,material:original});object.material=Array.isArray(original)?clones:clones[0]}this.records.push({object:o,data,originals,materials,energy:0})});this.update(0);}
+
+ update(time){this.time=Number.isFinite(time)?time:0;for(const r of this.records){const d=r.data,p=((this.time%d.duration)+d.duration)%d.duration/d.duration*(d.energy.length-1),i=Math.floor(p),f=p-i;const energy=Math.max(0,Math.min(1,d.energy[i]*(1-f)+d.energy[Math.min(i+1,d.energy.length-1)]*f));r.energy=energy;r.object.visible=energy>.015;const opacity=smooth(0,.16,energy)*(.35+.65*energy),brightness=.35+.65*Math.sqrt(energy);for(const saved of r.materials){const m=saved.material;m.opacity=opacity;m.color.copy(saved.color).multiplyScalar(brightness);m.emissive?.setRGB(saved.emissive.r+this.warm.r*.025*energy,saved.emissive.g+this.warm.g*.025*energy,saved.emissive.b+this.warm.b*.025*energy)}}}
+ getState(){return this.records.map(r=>({name:r.object.name,energy:r.energy,visible:r.object.visible,opacity:r.materials[0].material.opacity,brightness:r.materials[0].material.color.r,kind:r.data.kind}))}
+ dispose(){for(const r of this.records){for(const saved of r.originals)saved.object.material=saved.material;r.object.visible=true;for(const m of r.materials)m.material.dispose()}this.records=[];}
+}

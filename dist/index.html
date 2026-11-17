@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#282446"><title>Sparky · The Lost Moonlight</title><link rel="icon" href="assets/icon.svg"><link rel="stylesheet" href="style.css"></head>
+<body><main id="game" aria-label="Sparky's storybook adventure">
+<canvas id="world" aria-hidden="true"></canvas><div id="vignette"></div><div id="dust" aria-hidden="true"></div>
+<header><a class="brand" href="./" aria-label="Sparky home"><svg viewBox="0 0 30 38"><path d="M17 1C20 13 30 13 28 25C26 42 1 40 2 24C3 18 9 17 9 10C12 13 13 17 13 20C20 17 10 11 17 1Z" fill="#ffb557"/><path d="M16 20C24 28 20 34 14 34C7 34 8 26 16 20Z" fill="#fff0ad"/></svg><span>sparky<span class="brand-sub">little adventures</span></span></a>
+<nav id="chapters" aria-label="Journey progress"><span class="current" data-chapter="0">01 <b>Glowwood</b></span><i></i><span data-chapter="1">02 <b>Wishing River</b></span><i></i><span data-chapter="2">03 <b>Moonrise</b></span></nav>
+<div class="header-actions"><button id="sound" class="round" aria-label="Mute sound" title="Sound on">♫</button><button id="pause" class="round" aria-label="Pause adventure" title="Pause">Ⅱ</button></div></header>
+<div id="location"><span class="live-dot"></span><span id="location-text">GLOWWOOD · WHERE THE STORY BEGINS</span></div>
+<section id="cover"><p class="eyebrow">A SPARKY STORY · CHAPTER ONE</p><h1>A little spark.<br>A big <em>adventure.</em></h1><p class="intro">Somewhere beyond the sleepy trees,<br>the moon has lost its glow.<br>Will you help us bring it home?</p><button id="start" class="primary" disabled>Waking up Sparky… <span>✦</span></button><p class="cover-note">Explore. Play. Make a little magic.</p></section>
+<div id="character"><div id="char-shadow"></div><canvas id="sparky" aria-label="Animated Sparky character"></canvas><div id="char-name">YOUR LITTLE ADVENTURE BUDDY</div></div>
+<section id="activity" aria-label="Story activity" hidden></section><div id="effects" aria-hidden="true"></div>
+<div id="travel-label" hidden><span>✦</span> A little further into the story?</div>
+<section id="dialogue" aria-live="polite" hidden><div class="speaker-icon">✦</div><div class="speech"><div class="speaker">SPARKY <span id="speech-state">YOUR ADVENTURE BUDDY</span></div><p id="line"></p><div id="feedback" role="status"></div></div><div class="dialogue-actions"><button id="repeat" class="round" aria-label="Hear that again">↻</button><button id="next" class="primary">Let's go <span>→</span></button></div></section>
+<footer><span id="hint">A world of little wonders awaits</span><div id="inventory" aria-label="Moonlight collected"><span>MOONLIGHT</span><b data-light="0">✧</b><b data-light="1">✧</b><b data-light="2">✧</b></div><button id="restart">Start again ↺</button></footer>
+<div id="pause-screen" class="overlay" hidden><div><span class="eyebrow">TAKE YOUR TIME</span><h2>The magic can wait.</h2><p>Your adventure is right here.</p><button id="resume" class="primary">Keep exploring →</button></div></div>
+<div id="ending" class="overlay" hidden><div><p class="eyebrow">A LITTLE KINDNESS. A LOT OF MAGIC.</p><div class="end-stars">✦ ✦ ✦</div><h2>You brought back<br>the moonlight.</h2><p>Three little lights. One very big adventure.<br>Thank you for exploring with me!</p><button id="again" class="primary">Play the story again ↺</button></div></div>
+<div id="error" role="alert" hidden></div></main><script src="game.js"></script></body></html>
