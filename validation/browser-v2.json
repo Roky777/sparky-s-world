@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "checks": [
+    "Name microphone shows listening state",
+    "Spoken name parsed and shown for confirmation",
+    "Confirmed typed first name stored",
+    "Favourite colour remembered",
+    "Map has five explorable destinations",
+    "Wrong answer leaves progress unchanged",
+    "Visiting moon first earns exactly one light",
+    "Bridge handles wrong order",
+    "Bridge completion saves second distinct place",
+    "All three tasks complete independently of visit order",
+    "All map tasks lead to story celebration",
+    "Garden task uses favourite colour",
+    "Garden activity completes",
+    "Returning friend is remembered",
+    "Pause works during conversation",
+    "Microphone refusal leaves typing available",
+    "Phone conversation has no horizontal overflow",
+    "Phone conversation fits screen",
+    "Phone map supports horizontal exploration",
+    "Every scripted narration file decodes",
+    "No browser console errors"
+  ],
+  "consoleErrors": [],
+  "voiceTracks": 53,
+  "phone": {
+    "width": 390,
+    "height": 844,
+    "dialogue": {
+      "top": 398.38751220703125,
+      "bottom": 776.4875183105469,
+      "left": 21.475000381469727,
+      "right": 368.925012588501
+    },
+    "map": {
+      "width": 390,
+      "content": 1266,
+      "scroll": 77.5999984741211
+    }
+  },
+  "recognition": "Callbacks verified with a mock; microphone/provider accuracy requires physical-device check",
+  "verifiedAt": "2026-11-17T15:55:54.894Z"
+}

@@ -3,3 +3,5 @@ checks/
 *.tar.gz
 *.wav
 audio-source/
+art-source-v1/
+art-history-v1/
