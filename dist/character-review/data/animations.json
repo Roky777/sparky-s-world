@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Idle_Blink",
+    "label": "Idle with blink",
+    "loop": true,
+    "duration": 24.0
+  },
+  {
+    "name": "Hank_Idle_Breath1-loop",
+    "label": "Relaxed float",
+    "loop": true,
+    "duration": 2.0999999046325684
+  },
+  {
+    "name": "Hank_Idle_Action1",
+    "label": "Idle variation",
+    "loop": false,
+    "duration": 2.8666679859161377
+  },
+  {
+    "name": "Hank_Idle_Action3",
+    "label": "Curious idle",
+    "loop": false,
+    "duration": 4.4000020027160645
+  },
+  {
+    "name": "Hank_FeedingReact_Happy1",
+    "label": "Happy",
+    "loop": false,
+    "duration": 5.466667175292969
+  },
+  {
+    "name": "Hank_FeedingReact_HappyShort1",
+    "label": "Quick happy",
+    "loop": false,
+    "duration": 2.4333419799804688
+  },
+  {
+    "name": "Hank_FeedingReact_Amazed1",
+    "label": "Surprised",
+    "loop": false,
+    "duration": 3.766669988632202
+  },
+  {
+    "name": "Hank_FeedingReact_InLove1",
+    "label": "Affection",
+    "loop": false,
+    "duration": 5.833335876464844
+  },
+  {
+    "name": "Hank_IslandActions_Celebrate1",
+    "label": "Celebrate",
+    "loop": false,
+    "duration": 1.399999976158142
+  },
+  {
+    "name": "Hank_IslandActions_Celebrate2",
+    "label": "Cheer",
+    "loop": false,
+    "duration": 1.3666690587997437
+  },
+  {
+    "name": "Hank_Move_Jump1",
+    "label": "Hop",
+    "loop": false,
+    "duration": 0.9666681289672852
+  },
+  {
+    "name": "Hank_Move_Walk1",
+    "label": "Floating walk",
+    "loop": true,
+    "duration": 0.8000000715255737
+  },
+  {
+    "name": "Hank_PokeHands_Left1",
+    "label": "Left hand reaction",
+    "loop": false,
+    "duration": 2.0
+  },
+  {
+    "name": "Hank_PokeHands_Right1",
+    "label": "Right hand reaction",
+    "loop": false,
+    "duration": 2.0
+  },
+  {
+    "name": "Hank_NeedSleep_Breath1-loop",
+    "label": "Sleepy",
+    "loop": true,
+    "duration": 2.900001049041748
+  }
+]

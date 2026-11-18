@@ -1,0 +1,11 @@
+{
+  "mode": "Built-in image_gen",
+  "assets": [
+    {
+      "file": "dist/character-review/textures/living-fire-wrap-v1.webp",
+      "authoring": "characters/sparky-fireball-v2/textures/living-fire-wrap-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: production game 3D emission/base-color texture, not a character illustration. Reference image role: fire MATERIAL QUALITY only from the user's most recent cute fire character image; do not include that character, face, eyes, hands, torso or background. Create a square, edge-to-edge, horizontally seamless wrap texture of rich stylized living golden-orange fire. It will wrap around a round flame mascot in Blender and WebGL. Entire canvas filled with flowing layers of fire, opaque RGB, no transparency, no black void. Beautiful fine curling flame tongues sweeping UPWARD and bending organically into S curves, alternating broad flowing orange body masses and thin bright yellow hot inner filaments, asymmetric curls, tiny delicate wisp edges; depth through translucent-looking layered warm color, soft volume shading within each tongue, precise smooth high quality painted CGI fire detail matching the reference's fiery material. Keep saturated orange and warm red as the outer/low-energy base, golden yellow hotter inner layers, very small pale yellow highlights; do not make everything white/yellow. No bloom or glow halo baked into texture, no gritty noise, no sparks/dots, no smoke."
+    }
+  ],
+  "notes": "Texture is used for colour detail. The five new back flame forms and their four morph targets are actual authored Blender geometry, not generated texture. Reference-guided new-model and smoke experiments were not selected."
+}

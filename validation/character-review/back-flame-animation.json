@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "layers": 5,
+  "animations": 16,
+  "clips": [
+    "Idle_Blink",
+    "Fire_Ambient"
+  ],
+  "periods": [
+    6,
+    8,
+    4.8,
+    8,
+    6
+  ],
+  "rootFixed": true,
+  "phaseStaggered": true
+}

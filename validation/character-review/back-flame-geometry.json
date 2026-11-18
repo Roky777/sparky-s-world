@@ -1,0 +1,41 @@
+{
+  "status": "authored",
+  "flames": [
+    {
+      "name": "BackFlame_Center",
+      "vertices": 784,
+      "triangles": 1564,
+      "tipAmplitude": 0.009,
+      "period": 6
+    },
+    {
+      "name": "BackFlame_Left",
+      "vertices": 784,
+      "triangles": 1564,
+      "tipAmplitude": 0.009,
+      "period": 8
+    },
+    {
+      "name": "BackFlame_Right",
+      "vertices": 784,
+      "triangles": 1564,
+      "tipAmplitude": 0.009,
+      "period": 4.8
+    },
+    {
+      "name": "BackFlame_LeftOuter",
+      "vertices": 784,
+      "triangles": 1564,
+      "tipAmplitude": 0.009,
+      "period": 8
+    },
+    {
+      "name": "BackFlame_RightOuter",
+      "vertices": 784,
+      "triangles": 1564,
+      "tipAmplitude": 0.009,
+      "period": 6
+    }
+  ],
+  "method": "Five closed lofted flame meshes fitted to the rounded back with buried roots, raised tapered curls and four wave morphs"
+}

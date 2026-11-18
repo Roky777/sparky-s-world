@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "meshes": [
+    {
+      "name": "geometry_0",
+      "vertices": 45807,
+      "depthBefore": 0.6181063055992126,
+      "depthAfter": 0.7867508932955769,
+      "maxForwardChange": 0.09299111526560155,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Eyelid_L_Upper",
+      "vertices": 741,
+      "depthBefore": 0.05983808636665344,
+      "depthAfter": 0.10323952908564127,
+      "maxForwardChange": 0.08038557549931397,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Eyelid_L_Lower",
+      "vertices": 741,
+      "depthBefore": 0.05987545847892761,
+      "depthAfter": 0.1099016215409439,
+      "maxForwardChange": 0.08843737494138798,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Eyelid_L_Lash",
+      "vertices": 456,
+      "depthBefore": 0.05983231961727142,
+      "depthAfter": 0.10308344006959241,
+      "maxForwardChange": 0.08053081180446264,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Eyelid_R_Upper",
+      "vertices": 741,
+      "depthBefore": 0.05138397216796875,
+      "depthAfter": 0.08598076301632035,
+      "maxForwardChange": 0.0842754564828283,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Eyelid_R_Lower",
+      "vertices": 741,
+      "depthBefore": 0.05145198106765747,
+      "depthAfter": 0.09042724546616399,
+      "maxForwardChange": 0.09116811438440298,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Eyelid_R_Lash",
+      "vertices": 456,
+      "depthBefore": 0.05137726664543152,
+      "depthAfter": 0.0858631337914747,
+      "maxForwardChange": 0.08443091189848562,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Mouth_Interior",
+      "vertices": 1377,
+      "depthBefore": 0.00689050555229187,
+      "depthAfter": 0.013023093257965357,
+      "maxForwardChange": 0.09116879865157679,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Mouth_Teeth",
+      "vertices": 1377,
+      "depthBefore": 0.0,
+      "depthAfter": 0.0,
+      "maxForwardChange": 0.08991054555012529,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Mouth_Tongue",
+      "vertices": 1632,
+      "depthBefore": 0.0,
+      "depthAfter": 0.0,
+      "maxForwardChange": 0.08991054555012529,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Sparky_L_ShoulderCap",
+      "vertices": 162,
+      "depthBefore": 0.10113627649843693,
+      "depthAfter": 0.10678160510963096,
+      "maxForwardChange": 0.015452660682811661,
+      "flippedFaces": 0
+    },
+    {
+      "name": "Sparky_R_ShoulderCap",
+      "vertices": 162,
+      "depthBefore": 0.118410250172019,
+      "depthAfter": 0.1259639082018129,
+      "maxForwardChange": 0.016057411007475153,
+      "flippedFaces": 0
+    }
+  ],
+  "animations": 16,
+  "method": "Smooth invertible volume warp applied to basis and every morph endpoint; inverse-transpose normals; unchanged brown hands and animation curves"
+}
